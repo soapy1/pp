@@ -76,3 +76,11 @@ $ pixi run -- oras manifest fetch localhost:5000/pp:v1
   "schemaVersion": 2
 }
 ```
+
+### Pull a pixi project
+
+In order to pull a project to the remote repo, you can use the `pull` command. In this example we will pull the artifact we pushed up in the previous step.
+
+```
+$ pp pull ./dest localhost:5000/pp:v1
+```

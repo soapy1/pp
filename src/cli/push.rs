@@ -89,7 +89,7 @@ pub async fn execute(args: Args)  {
         .push(&reference, &layers, config, &auth, Some(image_manifest))
         .await
         .map(|push_response| push_response.manifest_url)
-        .expect("Cannot push artifact");
+        .expect("Cannot push pixi environment");
 
     println!("Successfully pushed: {response:?}");
 }
